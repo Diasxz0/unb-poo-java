@@ -1,0 +1,7 @@
+package dimensoes;
+
+public class Cilindro extends Figura3D{
+
+	private double altura;
+	private double raio;
+}

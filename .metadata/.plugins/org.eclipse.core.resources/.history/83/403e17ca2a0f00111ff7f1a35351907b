@@ -1,0 +1,28 @@
+package projeto;
+
+import java.util.Scanner;
+
+public class Teste {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        try {
+            System.out.print("Capacidade da agenda: ");
+            int tam = scan.nextInt();
+            scan.nextLine(); // Limpa o buffer
+
+            Agenda agenda = new Agenda(tam); // Usando a classe Agenda que você criou
+            boolean continuar = true;
+
+            while (continuar) {
+                System.out.println("\n1- Consultar | 2- Adicionar | 3- Sair");
+                int escolha = scan.nextInt();
+                scan.nextLine();
+            	}
+    
+        	} catch{
+        		
+        	}
+    }
+}

@@ -1,0 +1,16 @@
+package inteface;
+
+public class Gato {
+	
+	private String raça;
+
+	public String getRaça() {
+		return raça;
+	}
+
+	public void setRaça(String raça) {
+		this.raça = raça;
+	}
+	
+	
+}

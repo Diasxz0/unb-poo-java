@@ -1,0 +1,22 @@
+package Guanabara;
+
+import java.util.Arrays;
+
+public class Vetor {
+	public static void main(String[] agrs) {
+		int vetor[] = {9, 4, 2, 10, 7};
+		
+		/* diferente forma de atribuir diferentes valores
+		 a uma mesma variavel */
+		
+		// Arrays.sort(vetor)  ordena o vetor
+		
+		int posicao = Arrays.binarySearch(vetor, 9);
+		
+		for(int numero : vetor) {
+			System.out.printf("%d ", numero); //printa os numeros no vetor
+		}
+		
+		System.out.printf("\n%d", posicao);
+	}
+}

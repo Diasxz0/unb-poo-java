@@ -1,0 +1,6 @@
+package excecao;
+
+public class Agenda {
+
+	private Contato[] contatos;
+}

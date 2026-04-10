@@ -1,0 +1,10 @@
+package excecao;
+
+public class AgendaCheia {
+
+	@Override
+	public String toString() {
+		return "AgendaCheia";
+	}
+
+}

@@ -1,0 +1,30 @@
+package exer_tem_mtos;
+
+public class Teste_casting {
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		Pessoa alunoPessoa = aluno; //upcasting 
+		
+		Pessoa aluno2 = (Pessoa) new Aluno(); //upcasting tambem, mas eh manual, nao necesssario
+		
+		Object obj1 = obterString();
+		
+		String s1 = (String) obj1; //downcasting pq retorna uma string
+		
+		Object obj2 = "Minha String"; //upcasting
+		
+		String s2 = (String) obj2; //downcasting
+		
+		Object obj3 = new Object();
+		
+	}
+
+	
+	public static String obterString() {
+		return "minha string";
+	}
+	
+	
+	
+}

@@ -1,0 +1,17 @@
+package exer_dimensao;
+
+public class Quadrado extends Figura2D {
+
+	public Quadrado(String nome, String cor, double altura) {
+		super(nome, cor, altura);
+		
+		this.lados = 4;
+		
+	}
+
+	@Override
+	public double calcularArea() {
+		return super.altura * super.largura;
+	}
+
+}

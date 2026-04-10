@@ -1,0 +1,18 @@
+package exer_dimensao;
+
+public class Quadrado extends Figura2D {
+
+	public Quadrado(String nome, String cor) {
+		super(nome, cor);
+		
+		this.lados = 4;
+		
+	}
+
+	@Override
+	public double calcularArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

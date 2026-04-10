@@ -1,0 +1,52 @@
+package exer_Conta;
+
+public abstract class ContaBancaria {
+	protected String nomeConta;
+	protected String numeroConta;
+	protected double saldo;
+	
+	
+	
+	
+	public ContaBancaria() {
+		super();
+	}
+	
+	
+	public ContaBancaria(String nomeConta, String numeroConta, double saldo) {
+		super();
+		this.nomeConta = nomeConta;
+		this.numeroConta = numeroConta;
+		this.saldo = saldo;
+	}
+
+
+
+	public String getNomeConta() {
+		return nomeConta;
+	}
+	public void setNomeConta(String nomeConta) {
+		this.nomeConta = nomeConta;
+	}
+	public String getNumeroConta() {
+		return numeroConta;
+	}
+	public void setNumeroConta(String numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public abstract void realizarSaque(double valor);
+	
+	public void realizarDeposito(double valor) {
+		this.saldo += valor;
+		
+		System.out.println("Valor Adicionado!");
+		System.out.println("Saldo: " + this.saldo);
+	}
+}

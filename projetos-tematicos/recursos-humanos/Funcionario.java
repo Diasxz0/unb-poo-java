@@ -1,0 +1,41 @@
+package folha_Pagamento;
+
+public abstract class Funcionario {
+	private String nome;
+	private int id;
+	private double salarioBase;
+	
+	public Funcionario() {
+		super();
+	}
+	
+	public Funcionario(String nome, int id, double salarioBase) {
+		super();
+		this.nome = nome;
+		this.id = id;
+		this.salarioBase = salarioBase;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public double getSalarioBase() {
+		return salarioBase;
+	}
+	public void setSalarioBase(double salarioBase) throws SalarioInvalido {
+		if (salarioBase > 0)
+			this.salarioBase = salarioBase;
+		throw new SalarioInvalido();
+	}
+	
+	public abstract double calcularSalario();
+	
+}

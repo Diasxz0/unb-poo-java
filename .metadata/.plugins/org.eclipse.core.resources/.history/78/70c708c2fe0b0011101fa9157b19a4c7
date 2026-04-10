@@ -1,0 +1,14 @@
+package dimensoes;
+
+public class Teste {
+
+	FiguraGeometrica[] lista_de_figuras = new FiguraGeometrica[6];
+	lista_de_figuras[0] = new Circulo("Circulo", "Azul", 5);
+	lista_de_figuras[1] = new Quadrado("Quadrado", "Verde", 10);
+	lista_de_figuras[2] = new Triangulo();
+	lista_de_figuras[3] = new Cilindro();
+	lista_de_figuras[4] = new Piramide();
+	lista_de_figuras[5] = new Cubo();
+	
+	
+}

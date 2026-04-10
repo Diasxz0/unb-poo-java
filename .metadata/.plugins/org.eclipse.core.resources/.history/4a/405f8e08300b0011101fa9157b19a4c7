@@ -1,0 +1,24 @@
+package exer_dimensao;
+
+public abstract class Figura2D extends FiguraGeometrica implements DimensaoSuperficial{
+	
+	int lados;
+
+	public int getLados() {
+		return lados;
+	}
+
+	public void setLados(int lados) {
+		this.lados = lados;
+	}
+
+	@Override
+	public String toString() {
+		String s = "\nNome: " + super.nome;
+		s += "\nCor: " + super.cor;
+		s += "\nLados: " + this.lados;
+		return s;
+	}
+
+	
+}

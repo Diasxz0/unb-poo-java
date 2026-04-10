@@ -1,0 +1,30 @@
+package excecao;
+
+public class ExceptionGenerica {
+
+	public static void main(String[] args) {
+		
+		int[] numeros = {4,8,16,32,64, 128};
+		
+		int[] denominadores = {2,4,0,8,0}; 
+		
+		for(int i = 0; i < numeros.length; i++) {
+			try {
+				
+				System.out.println(numeros[i] + " / " + denominadores[i] + " = " + (numeros[i] / denominadores[i]));
+				
+				
+			} catch(Exception e) {
+				
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+				 //System.exit(0); //termina a execução do programa
+				
+			}
+			/*finally{ //sempre é executado depois do try ou do catch
+				System.out.println("essa linha é impressa sempre após o try ou o catch");
+			}*/
+		}
+	}
+
+}

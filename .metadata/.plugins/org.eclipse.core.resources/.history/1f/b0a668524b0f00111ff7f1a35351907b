@@ -1,0 +1,47 @@
+package folha_Pagamento;
+
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		
+		System.out.println("\n1 - Adicionar \n2 - Listar \n3- Sair");
+		int escolha = scan.nextInt();
+		scan.nextLine();
+		boolean continuar = true;
+		while(continuar) {
+			switch(escolha) {
+			case 1:
+				System.out.println("\n1 - Desenvolvedor \n2 - Gerente \n3 - Estagiario");
+				int escolha_2 = scan.nextInt();
+				boolean continuar2 = true;
+				while(continuar2) {
+					switch(escolha_2) {
+					case 1:
+						System.out.print("Nome: ");
+						String nome = scan.nextLine();
+						
+						System.out.print("Salario: ");
+						double salario = scan.nextDouble();
+						
+						System.out.print("linguagem: ");
+						String linguagem = scan.nextLine();
+						
+						try {
+							Desenvolvedor dev = new Desenvolvedor(nome, salario, id, linguagem);
+						} catch (SalarioInvalido e){
+							e.getMessage();
+						} finally {
+							scan.close();
+						}
+					}
+				}
+			}
+		}
+		
+	}
+
+}

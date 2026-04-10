@@ -1,0 +1,36 @@
+package dimensoes;
+
+public class Quadrado extends Figura2D{
+
+	private int lado;
+
+	public Quadrado(String nome, String cor, int lado) {
+		super(nome, cor);
+		this.lado = lado;
+	}
+
+	public int getLado() {
+		return lado;
+	}
+
+	public void setLado(int lado) {
+		this.lado = lado;
+	}
+
+	@Override
+	public double calcularArea() {
+		
+		return this.lado * this.lado;
+	}
+
+	@Override
+	public String toString() {
+		String s = super.toString();
+		s += "\nLado: " + this.lado;
+		return s;
+	}
+
+	
+	
+	
+}

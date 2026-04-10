@@ -1,0 +1,14 @@
+package exer_dimensao;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		FiguraGeometrica[] figuras = new FiguraGeometrica[6];
+		
+		figuras [0] = new Circulo(2);
+	
+		
+	}
+
+}

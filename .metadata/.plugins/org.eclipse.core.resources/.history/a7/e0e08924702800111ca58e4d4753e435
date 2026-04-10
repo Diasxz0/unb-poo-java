@@ -1,0 +1,30 @@
+package aulas;
+
+import javax.swing.JOptionPane;
+
+public class Aula1 {
+
+	public static void main(String[] args) {
+		
+		int num1, num2;
+		
+		int res;
+		
+		
+		String Str1 = JOptionPane.showInputDialog("Digite um numero: ");
+		
+		String Str2 = JOptionPane.showInputDialog("Digite outro numero: ");
+		
+		num1 = Integer.parseInt(Str1);
+		num2 = Integer.parseInt(Str2);
+		
+		res = num1 / num2;
+		
+		res = (double) res;
+		
+		JOptionPane.showMessageDialog(null, "divisao eh " + res);
+		
+
+	}
+
+}

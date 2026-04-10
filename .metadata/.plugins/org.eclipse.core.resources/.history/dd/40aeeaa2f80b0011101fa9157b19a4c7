@@ -1,0 +1,7 @@
+package dimensoes;
+
+public abstract class FiguraGeometrica {
+	
+	private String nome;
+	private String cor;
+}

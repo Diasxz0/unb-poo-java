@@ -1,0 +1,91 @@
+package exer_animais;
+
+public abstract class Animais {
+	protected String nome;
+	protected int patas;
+	protected double comprimento;
+	protected String cor;
+	protected String ambiente;
+	protected double velocidade;
+	
+	
+	
+	public Animais() {
+		super();
+	}
+
+	public Animais(String nome, int patas, double comprimento, String cor, String ambiente, double velocidade) {
+		super();
+		this.nome = nome;
+		this.patas = patas;
+		this.comprimento = comprimento;
+		this.cor = cor;
+		this.ambiente = ambiente;
+		this.velocidade = velocidade;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getPatas() {
+		return patas;
+	}
+
+	public void setPatas(int patas) {
+		this.patas = patas;
+	}
+
+	public double getComprimento() {
+		return comprimento;
+	}
+
+	public void setComprimento(double comprimento) {
+		this.comprimento = comprimento;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public String getAmbiente() {
+		return ambiente;
+	}
+
+	public void setAmbiente(String ambiente) {
+		this.ambiente = ambiente;
+	}
+
+	public double getVelocidade() {
+		return velocidade;
+	}
+
+	public void setVelocidade(double velocidade) {
+		this.velocidade = velocidade;
+	}
+
+	@Override
+	public String toString() {
+		String s = "Animal: " + this.nome +"\n";
+		 s += "Comprimento: " + this.comprimento + "\n";
+		 s += "Patas: " + this.patas + "\n";
+		 s += "Cor: " + this.cor + "\n";
+		 s += "Ambiente: " + this.ambiente + "\n";
+		 s += "Velocidade: " + this.velocidade + "\n";
+		 return s;
+		
+	}
+	
+	
+	
+	
+	
+}

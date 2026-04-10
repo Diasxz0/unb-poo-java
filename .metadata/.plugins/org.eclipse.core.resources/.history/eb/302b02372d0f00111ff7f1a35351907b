@@ -1,0 +1,62 @@
+package projeto;
+
+import java.util.Scanner;
+
+public class Teste {
+
+    public static void main(String[] args) {
+    	Scanner scan = new Scanner(System.in);
+    	try {
+    	
+    		System.out.println("Capacidade da Agenda: ");
+    		
+    		int tam = scan.nextInt();
+    		scan.nextLine();
+    		
+    		Agenda agenda = new Agenda();
+    		boolean continuar = true;
+    		
+    		while(continuar) {
+    			System.out.println("\n1 - Consultar \n2 - Adicionar \n0 - Sair");
+    			int escolha = scan.nextInt();
+    			try {
+    				switch(escolha) {
+    				case 1:
+    					System.out.println("Nome para busca");
+    					String buscado = scan.nextLine();
+    					Contato c = agenda.consultarContato(buscado);
+    					System.out.println("Encontrado: " + c.getNome() + "-" + c.getTelefone());
+    					break;
+    				case 2:
+    					System.out.println("Nome: ");
+    					String nome = scan.nextLine();
+    					System.out.println("Telefone: ");
+    					String telefone = scan.nextLine();
+
+    					Contato novo = new Contato(nome, telefone);
+
+    					agenda.adicionarContato(novo);
+
+    					System.out.println("Contato adicionado! ID: " + novo.getId());
+    					break;
+    				case 3:
+    					continuar = false;
+    					break;
+
+    				}
+        		} catch (ContatoNaoExiste | AgendaCheia e) {
+        			System.err.println(e.getMessage());
+        		}
+        			
+        		}
+    			
+    			
+
+    		
+    	} catch{
+    		
+    	}
+
+        
+    }
+}

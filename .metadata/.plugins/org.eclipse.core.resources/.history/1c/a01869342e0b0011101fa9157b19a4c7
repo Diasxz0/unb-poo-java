@@ -1,0 +1,7 @@
+package exer_dimensao;
+
+public abstract class Figura3D extends FiguraGeometrica implements DimensaoSuperficial, DimensaoVolumetrica{
+
+	public abstract double calcularVolume();
+	
+}

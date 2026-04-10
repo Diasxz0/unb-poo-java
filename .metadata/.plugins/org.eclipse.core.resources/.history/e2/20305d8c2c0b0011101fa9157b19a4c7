@@ -1,0 +1,8 @@
+package figuras;
+
+public abstract class FiguraGeometrica {
+
+	protected String nome;
+	protected String cor;
+	
+}

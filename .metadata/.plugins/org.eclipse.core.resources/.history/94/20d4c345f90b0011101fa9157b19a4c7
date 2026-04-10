@@ -1,0 +1,8 @@
+package dimensoes;
+
+public class Quadrado extends Figura2D{
+
+	private int lado;
+	
+	
+}

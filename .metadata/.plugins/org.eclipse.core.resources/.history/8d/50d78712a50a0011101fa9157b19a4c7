@@ -1,0 +1,15 @@
+package exer_tem_mtos;
+
+public class Teste_instance {
+	
+	Pessoa aluno = new Aluno();
+	Pessoa professor = new Professor();
+	
+	if(aluno instanceof Aluno) {
+		System.out.println("eh aluno");
+	}
+	if(professor instanceof Professor) {
+		System.out.println("eh professor");
+	}
+	
+}

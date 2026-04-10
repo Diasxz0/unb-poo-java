@@ -1,0 +1,37 @@
+package folha_Pagamento;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FolhaPagamento {
+
+	private List<Funcionario> funcionarios;
+
+	public FolhaPagamento() {
+		this.funcionarios = new ArrayList<>();
+	}
+	
+	
+	public void adicionarFuncionario(Funcionario f) {
+		this.funcionarios.add(f);
+	}
+	
+	public double calcularTotalFolha() {
+		double total = 0;
+		
+		for(Funcionario f : funcionarios) {
+			total += f.calcularSalario();
+		}
+		
+		return total;
+		
+	}
+	
+	public void listarRelatorio() {
+		for(Funcionario f : funcionarios) {
+			if ( f instanceof )
+		}
+	}
+	
+	
+}

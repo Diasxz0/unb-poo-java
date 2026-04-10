@@ -1,0 +1,46 @@
+package exer_Conta;
+
+public class ContaEspecial extends ContaBancaria {
+
+		private double limite;
+		
+		
+
+		public ContaEspecial() {
+			super();
+		}
+
+		public ContaEspecial(String nomeConta, String numeroConta, double saldo) {
+			super(nomeConta, numeroConta, saldo);
+		}
+
+		public double getLimite() {
+			return limite;
+		}
+
+		public void setLimite(double limite) {
+			this.limite = limite;
+		}
+	
+		@Override
+		public void realizarSaque(double valor) {
+		    // O saldo pode ficar negativo, mas não pode ser menor que o limite negativo
+			
+		    if ((this.saldo - valor) < (this.limite * -1)) {
+		        System.out.println("Saldo insuficiente, mesmo com o limite!");
+		        return;
+		    }
+		    this.saldo -= valor;
+		    System.out.println("Saque realizado com sucesso!");
+		}
+		
+		@Override
+		public String toString() {
+			String s = "-----CONTA ESPECIAL----" + "\n";
+			s += "Nome da conta: " + super.nomeConta + "\n";
+			s += "Numero da conta: " + super.numeroConta + "\n";
+			s += "Saldo " + super.saldo + " reais" + "\n";
+			s += "Limite: " + this.limite;
+			return s;
+		}
+}

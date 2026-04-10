@@ -1,0 +1,22 @@
+package Guanabara;
+
+public class Exercicio_5 {
+	public static void main(String[] agrs) {
+		int n1 = 4;
+		int n2 = 8;
+		
+		int r = (n1 > n2) ? 1 : 0; // se n1 for maior, r = 1. 
+		
+		System.out.printf("%d", r);
+		
+		
+		String nome_1 = "Warlley";
+		String nome_2 = "Warlley";
+		
+		String res = (nome_1 == nome_2) ? "igual" : "diferente";
+		
+		System.out.printf("%s", res);
+		
+		
+	}
+}

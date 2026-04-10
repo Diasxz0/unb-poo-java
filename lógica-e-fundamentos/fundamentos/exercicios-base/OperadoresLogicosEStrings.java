@@ -1,0 +1,30 @@
+package Guanabara;
+
+public class Exercicio_5 {
+	public static void main(String[] agrs) {
+		int n1 = 4;
+		int n2 = 8;
+		
+		int r = (n1 > n2) ? 1 : 0; // se n1 for maior, r = 1. 
+		
+		System.out.printf("\n\t%d", r);
+		
+		
+		String nome_1 = "Warlley";
+		String nome_2 = "Warlley";
+		String nome_3 = new String("Warlley");
+		
+		// pergunta se o objeto eh igual
+		String res = (nome_1 == nome_2) ? "igual" : "diferente"; //tem como fazer comparação de string
+		
+		// se a comparação fosse com o 3, daria errado, pq a forma de declarar foi diferente
+		
+		//String res = (nome_1.equals(nome_3)) ... pergunta se o conteudo eh igual
+		//essa forma de declarar daria igual independente da comparação entre os 3
+		
+		System.out.printf("\n\t%s", res);
+		
+		// && ||   ^      !
+		// E  Ou OU..OU NAO
+	}
+}

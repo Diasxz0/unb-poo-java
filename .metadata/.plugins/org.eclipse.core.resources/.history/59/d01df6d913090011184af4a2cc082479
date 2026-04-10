@@ -1,0 +1,80 @@
+package exer_Conta;
+
+import java.util.Scanner;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int opcao;
+		
+	do {	
+		System.out.println("1 - Conta Poupança");
+		System.out.println("2 - Conta Especial");
+		opcao = scan.nextInt();
+		
+		switch(opcao) {
+			case 1: {
+				ContaPoupanca Conta_Poupanca = new ContaPoupanca();
+				
+				System.out.println("Insira o nome da conta: ");
+				Conta_Poupanca.setNomeConta(scan.nextLine());
+				
+				System.out.println("Insira o numero da conta: ");
+				Conta_Poupanca.setNumeroConta(scan.nextLine());
+				
+				
+				System.out.println("Insira seu saldo: ");
+				Conta_Poupanca.setSaldo(scan.nextDouble());
+				scan.nextLine();
+				
+				Conta_Poupanca.realizarDeposito(1200);
+				Conta_Poupanca.realizarSaque(1200);
+				
+				double rendimento;
+				System.out.println("Rendimento hoje: ");
+				rendimento = scan.nextDouble();
+				
+				Conta_Poupanca.calcularNovoRendimento(rendimento);
+				
+				break;
+			}
+			
+			case 2: {
+				ContaEspecial Conta_Especial = new ContaEspecial();
+				
+				System.out.println("Insira o nome da conta: ");
+				Conta_Especial.setNomeConta(scan.nextLine());
+				
+				System.out.println("Insira o numero da conta: ");
+				Conta_Especial.setNumeroConta(scan.nextLine());
+				
+				
+				System.out.println("Insira seu saldo: ");
+				Conta_Especial.setSaldo(scan.nextDouble());
+				scan.nextLine();
+				
+				System.out.println("Insira o limite Especial da conta: ");
+				Conta_Especial.setLimite(scan.nextDouble());
+				
+				
+				Conta_Especial.realizarSaque(1000);
+				Conta_Especial.realizarDeposito(10);
+				
+				
+			} 
+			default: 
+				System.out.println("Escolha 1 ou 2");
+				break;
+			
+		}
+	}while(opcao != 1 && opcao !=2);
+	
+	
+		
+				
+	}
+
+}

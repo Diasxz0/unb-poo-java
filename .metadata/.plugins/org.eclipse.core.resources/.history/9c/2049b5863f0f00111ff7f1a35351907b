@@ -1,0 +1,9 @@
+package folha_Pagamento;
+
+public abstract class Funcionario {
+	private String nome;
+	private int id;
+	private double salarioBase;
+	
+	
+}

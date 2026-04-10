@@ -1,0 +1,12 @@
+package excecao;
+
+public class ContatoNaoExiste extends Exception{
+
+	@Override
+	public String toString() {
+		return "ContatoNaoExiste";
+	}
+
+	
+	
+}

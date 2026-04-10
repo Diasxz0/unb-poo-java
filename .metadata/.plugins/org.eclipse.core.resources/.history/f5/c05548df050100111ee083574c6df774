@@ -1,0 +1,15 @@
+package Guanabara;
+
+import java.util.Scanner;
+
+public class Exercicio_3 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.printf("Ano em que você nasceu: ");
+		int ano = scanner.nextInt();
+		int idade = 2026 - ano;
+		System.out.printf("Sua idade é: %d anos\n", idade);
+		scanner.close();
+		System.out.println("Sua " + idade + "é " + ano);
+	}
+}

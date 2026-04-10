@@ -1,0 +1,38 @@
+package dimensoes;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		FiguraGeometrica[] lista_de_figuras = new FiguraGeometrica[6];
+		Circulo c1 = new Circulo("Circulo", "Azul", 5);
+		lista_de_figuras[0] = c1;
+				
+		Quadrado q1 = new Quadrado("Quadrado", "Verde", 10);
+		lista_de_figuras[1] = q1;
+		
+		Triangulo t1 = new Triangulo("Triangulo", "Amarelo", 8, 4);
+		lista_de_figuras[2] = t1;
+		
+		Cilindro c2 = new Cilindro("Cilindro", "Preto", 10, 7);
+		lista_de_figuras[3] = c2;
+		
+		Piramide t2 = new Piramide("Piramide", "Roxo", 7, 9, 5, 6, c1 );
+		lista_de_figuras[4] = t2;
+		
+		Cubo c3  = new Cubo("Cubo", "Branco", 9);
+		lista_de_figuras[5] = c3;
+		
+		for(FiguraGeometrica c : lista_de_figuras) {
+			if(c instanceof Figura2D) 
+				System.out.println("Figura 2D");
+			if(c instanceof Figura3D)
+				System.out.println("Figura 3D");
+			System.out.println("----------------");
+			System.out.println(c.toString());
+			System.out.println("----------------");
+			
+		}
+		
+		
+	}	
+}

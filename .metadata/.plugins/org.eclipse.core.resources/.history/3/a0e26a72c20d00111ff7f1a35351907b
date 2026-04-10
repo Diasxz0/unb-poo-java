@@ -1,0 +1,50 @@
+package excecao;
+
+import java.util.Scanner;
+
+public class Agenda {
+
+	private Contato[] contatos;
+
+	public Contato[] getContatos() {
+		return contatos;
+	}
+
+	public void setContatos(Contato[] contatos) {
+		this.contatos = contatos;
+	}
+
+	public Agenda() {
+		super();
+	}
+
+	public Agenda(Contato[] contatos) {
+		super();
+		this.contatos = contatos;
+	}
+	
+	public void adicionarContato() {
+		Contato novo_contato = new Contato();
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Nome do Contato: ");
+		
+		novo_contato.setNome(scan.nextLine());
+		
+		System.out.print("Telefone: ");
+		
+		novo_contato.setTelefone(scan.nextLine());
+		
+		scan.close();
+	}
+	
+	public Contato  consultarContato(String nomeBusca) {
+		
+		for(int i = 0; i < contatos.length; i++) {
+			
+		}
+		
+	}
+	
+}

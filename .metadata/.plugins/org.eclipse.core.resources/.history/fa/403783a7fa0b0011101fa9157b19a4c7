@@ -1,0 +1,6 @@
+package dimensoes;
+
+public class Piramide extends Figura3D{
+
+	private double altura;
+}
