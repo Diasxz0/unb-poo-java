@@ -28,7 +28,4 @@ Projetos que utilizam recursos mais complexos da linguagem:
 * **IDE**: Eclipse / VS Code.
 * **Controle de Versão**: Git & GitHub.
 
-## 🚀 Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/Diasxz0/unb-poo-java.git](https://github.com/Diasxz0/unb-poo-java.git)
+
