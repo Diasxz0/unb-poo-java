@@ -1,7 +1,8 @@
-Com base na estrutura que organizamos para o seu repositório unb-poo-java, aqui está um modelo de README.md profissional para o seu portfólio de Engenharia de Software na UnB:
-
-UnB - Programação Orientada a Objetos (Java)
+#UnB - Programação Orientada a Objetos (Java)
 Este repositório contém os exercícios e projetos desenvolvidos por Warlley Dias de Medeiros durante o 3º semestre da graduação em Engenharia na Universidade de Brasília (UnB/FCTE). O foco principal é o aprendizado de Java, Lógica de Programação e os pilares da Programação Orientada a Objetos (POO).
+
+📂 Estrutura do Repositório
+O projeto está organizado por níveis de complexidade para facilitar a revisão dos conceitos:
 
 📂 Estrutura do Repositório
 O projeto está organizado por níveis de complexidade para facilitar a revisão dos conceitos:
