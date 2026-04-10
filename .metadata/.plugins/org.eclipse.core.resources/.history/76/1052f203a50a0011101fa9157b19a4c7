@@ -1,8 +1,0 @@
-package exer_tem_mtos;
-
-public class Teste_instance {
-	
-	Pessoa pessoa = new Pessoa();
-	Pessoa aluno = new Aluno();
-	Pessoa professor = new Professor();
-}

@@ -1,7 +1,0 @@
-package dimensoes;
-
-public class Triangulo extends Figura2D{
-
-	private double base;
-	private double altura;
-}

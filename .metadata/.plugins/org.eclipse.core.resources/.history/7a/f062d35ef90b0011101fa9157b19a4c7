@@ -1,6 +1,0 @@
-package dimensoes;
-
-public class Circulo extends Figura2D {
-
-	private double raio;
-}

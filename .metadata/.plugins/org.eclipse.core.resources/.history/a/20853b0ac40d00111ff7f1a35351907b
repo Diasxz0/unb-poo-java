@@ -1,7 +1,0 @@
-package excecao;
-
-public class AgendaCheia extends Exception {
-
-	
-
-}

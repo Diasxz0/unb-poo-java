@@ -1,6 +1,0 @@
-package inteface;
-
-public abstract class Ave {
-
-		public abstract void voar();
-}

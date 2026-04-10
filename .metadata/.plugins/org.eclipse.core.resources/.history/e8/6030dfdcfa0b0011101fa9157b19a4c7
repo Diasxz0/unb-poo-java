@@ -1,6 +1,0 @@
-package dimensoes;
-
-public interface DimensaoSuperficial {
-
-	public double calcularArea();
-}

@@ -1,8 +1,0 @@
-package inteface;
-
-public interface AnimalDomesticado {
-
-	void levarVeterinario();
-	void alimentar();
-
-}

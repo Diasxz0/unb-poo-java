@@ -1,7 +1,0 @@
-package Figuras;
-
-public class Figura2D extends FiguraGeometrica {
-
-	protected int lados;
-
-}
